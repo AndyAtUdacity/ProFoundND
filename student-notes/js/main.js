@@ -1,7 +1,6 @@
 function toggleVocabDescriptionOnClick() {
-	description = this.getElementsByClassName('vocab-description')[0];
-	disp = description.style.display;
-	console.log(disp);
+	var description = this.getElementsByClassName('vocab-description')[0];
+	var disp = description.style.display;
 	if (disp == '') {
 		description.style.display = 'inline-block';
 	} else {
@@ -9,11 +8,9 @@ function toggleVocabDescriptionOnClick() {
 	}
 }
 
-var vocabTerms = document.getElementsByClassName('vocab');
-var term, description;
+var vocabTerms = document.getElementsByClassName('vocab-term-container');
+var term;
 for (var i=0; i<vocabTerms.length; i++){
 	term = vocabTerms[i];
-	description = term.getElementsByClassName('vocab-description')[0];
-	console.log(description);
-	term.addEventListener('click', toggleVocabDescriptionOnClick)
+	term.addEventListener('click', toggleVocabDescriptionOnClick);
 }

@@ -9,6 +9,11 @@
     font-family: 'Whitney SSm A', 'Whitney SSm B', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+img.logo {
+    max-width: 100px;
+    width: 100%;
+}
+
 .grid {
     margin: 0 auto;
     max-width: 1200px;
@@ -83,6 +88,10 @@ div.disabled {
 
 span.vocab-description {
     display: none;
+    font-size: small;
+    color : #4E4E4E;
+    padding-left: 5%;
+
 }
 div.topnav {
     background-color: #294860;
@@ -90,4 +99,16 @@ div.topnav {
 }
 div.leftnav {
     border-right: solid #B3B3B3 1px;
+}
+div.right-nav {
+    border-left: solid #B3B3B3 1px;
+}
+h5.vocab-term {
+    margin-bottom: 5px;
+}
+
+div.footer {
+    background-color: #294860;
+    color : white;
+    height : 50px;
 }
