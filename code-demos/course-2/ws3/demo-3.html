@@ -1,0 +1,75 @@
+<head>
+  <title>Andy's Notes</title>
+  <link rel="stylesheet" href="demo-3.css">
+</head>
+<body>
+  <h1>Important Concepts - Telling Computers What to Do</h1>
+  <div class="lesson">
+    <h2>Lesson 3: Input -> Function -> Output</h2>
+    <div class="concept">
+      <div class="concept-title">
+        What is a function (Dave calls them "procedures")?
+      </div>
+      <div class="concept-description">
+        <p>
+          A function is something that takes input, does something to that input, and then produces output. For example, a function named <span class="code">square</span> might take a number as input and produce the square of that number as output.
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        What is the difference between <b>making</b> and <b>using</b> a function?
+      </div>
+      <div class="concept-description">
+        <p>
+          Functions are made by starting a line of code with the keyword <span class="code">def</span> and then giving a function
+          name followed by the function <b>parameters</b> in parentheses. These parameters will eventually be replaced by actual values when the function is used (called).
+        </p>
+        <p>
+          In the "body" of the function, we write the code that specifies what to do with the input parameters. For example the following code could be the definition of a function called <span class="code">square</span>:
+          <div class="code-block">
+            def square(x): <br>
+            <span class="indent">answer = x * x</span> <br>
+            <span class="indent">return answer</span>
+          </div>
+        </p>
+        <p>
+          To use a function, we write the name of the function followed by the value(s) we want to give it in parentheses. Like this:
+          <div class="code-block">
+            print square(4) <br>
+            >>>16
+          </div>
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        How do functions help programmers avoid repetition?
+      </div>
+      <div class="concept-description">
+        <p>
+          Functions are tools that programmers can create and reuse forever! Once you've defined a function once, you never have to define it again.
+        </p>
+      </div>
+    </div>
+    <div class="concept">
+      <div class="concept-title">
+        What happens if a function doesn't have a  <span class="code">return</span> statement?
+      </div>
+      <div class="concept-description">
+        <p>
+          The <span class="code">return</span> keyword tells Python exactly what the function should produce as output. If a function doesn't have a <span class="code">return</span> statement, then you'll get behavior like this:
+          <div class="code-block">
+            def add_two(x): <br>
+            <span class="indent">answer = x + 2</span> <br>
+            <br>
+            new_number = add_two(7)<br>
+            print new_number<br>
+            >>>None
+          </div>
+        </p>
+      </div>
+    </div>
+  </div>
+</body>
+
