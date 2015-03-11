@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="courses">
+{% for course in courses %}
+	<div class="course">
+		<h2 class="course-title">
+			Course {{ loop.index0 }}: <a href="{{ course['url'] }}" target="_blank">{{ course['title'] }}</a>
+		</h2>
+		<div class="course-description">
+			{{ course['description'] }}
+		</div>
+		<div class="lessons">
+			<h3>Lessons</h3>
+			<ol>
+			{% for lesson in course['lessons'] %}
+				<li>{{ lesson.title }}</li>
+			{% endfor %}
+			</ol>
+		</div>
+	</div>
+{% endfor %}
+</div>
+{% endblock %}

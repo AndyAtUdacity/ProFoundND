@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="course">
+	<h1 class="course-title">
+		Course {{ course_number }}: {{ course['title'] }}
+	</h1>
+	<div class="course-summary"> {{ course['description'] }}</div>
+	<div class="lessons">
+
+		{% for lesson in course['lessons'] %}
+		<div class="lesson">
+			<div class="lesson-title">
+				<a href="lesson/{{ loop.index0 }}/">{{ lesson['title'] }}</a>
+			</div>
+			<div class="lesson-description">
+				{{ lesson['description'] }}
+			</div>
+		</div>
+		{% endfor %}
+
+	</div>
+</div>
+{% endblock %}
