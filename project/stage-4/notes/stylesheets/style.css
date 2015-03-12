@@ -1,24 +1,108 @@
 body {
-	font-family: Helvetica;
+	font-family: "Whitney SSm A","Whitney SSm B","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #303030;
 }
 
-h1 {
-	text-align: center;
-	color: #294860;
-}
-
-.lesson {
-	background-color: #DFEAF1;
-	border-radius: 6px;
-	padding: 10px;
-	margin-bottom: 10px;
-}
-
-.concept {
+.top-nav {
 	background-color: #294860;
-	margin-bottom: 4px;
-	padding: 4px;
+	margin-bottom: 20px;
 	color: white;
+	text-align: left;
+	padding: 10px;
+}
+
+.footer {
+	background-color: #294860;
+	padding: 10px;
+	text-align: center;
+	color: white;
+	padding-bottom: 100px;
+}
+
+span.top-title {
+	font-weight: 500;
+	font-size: 28px;
+}
+
+.content {
+	padding: 0 10px;
+}
+
+.course-title {
+	color: #294860;
+	background-color: #DDD;
+	padding-left: 10px;
+}
+
+.course-description{
+	padding-left :10px;
+}
+
+.lessons {
+	float: left;
+	display: inline-block;
+	width : 38%;
+	text-align: left;
+}
+.course-summary {
+	padding-left : 10px;
+}
+.lessons-in-course {
+	padding-left: 10px;
+}
+
+.container {
+	position: relative;
+	padding-left: 10px;
+}
+.video {
+	float : right;
+	display: inline-block;
+	width: 58%;
+	text-align: center;
+}
+
+.video-caption {
+	font-size: smaller;
+	font-weight: bold;
+}
+.clear {
+	clear: both;
+}
+
+ol.lesson{
+	text-align: left;
+}
+
+ul.link {
+	text-align: left;
+}
+
+a.lesson {
+	font-weight: bold;
+}
+
+form {
+	display: inline-block;
+}
+#take-nanodegree {
+	background-image: linear-gradient(to bottom,#f59a18 0,#f27d13 100%);
+  background-repeat: repeat-x;
+  border-color: #c7640b;
+  color: #fff;
+  background-color: #f6a926;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 4px 12px;
+  font-size: 14px;
+  line-height: 1.7;
+  cursor: pointer;
 }
 
 .concept-title {
