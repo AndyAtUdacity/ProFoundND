@@ -1,18 +1,73 @@
 body {
-	font-family: "Whitney SSm A","Whitney SSm B","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: "Whitney SSm A","Whitney SSm B","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 16px;
   line-height: 1.7;
   color: #303030;
 }
-
-.top-nav {
+div.centered {
+	text-align: center;
+}
+h2 {
+	color: #294860;
+	background-color: #DDD;
+	padding-left: 10px;
+}
+div.top-nav {
 	background-color: #294860;
-	margin-bottom: 20px;
 	color: white;
 	text-align: left;
 	padding: 10px;
+	position: relative;
+	width: 100%;
 }
+.top-link {
+	display: inline-block;
+	float : right;
+	padding-right: 15px;
+	font-size : 18px;
 
+}
+a.top-link {
+	color: rgba(255,255,255,0.5);
+	text-decoration: none;
+	position: relative;
+	float: left;
+	z-index: 100;
+}
+#home-link { 
+	width: 80px;
+	text-align: center;
+}
+div.section {
+	box-sizing: border-box;
+	background-size: cover;
+	background-position: center;
+	height: 290px;
+	color: white;
+	text-align: center;
+	margin : 5px;
+}
+a.section-title {
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.7);
+	width: 80%;
+	font-weight: normal;
+	padding: 20px 40px;
+	margin-top: 100px;
+	color : white;
+	text-decoration: none;
+	vertical-align: middle;
+	font-size: 30px;
+	right:0;
+	top:70px;
+}
+div.student-note {
+	background-color: #8DC5D8;
+	padding : 20px;
+	border-radius: 4px;
+	border : 2px solid #294860;
+	margin-bottom: 10px;
+}
 .footer {
 	background-color: #294860;
 	padding: 10px;
@@ -20,42 +75,29 @@ body {
 	color: white;
 	padding-bottom: 100px;
 }
-
-span.top-title {
-	font-weight: 500;
-	font-size: 28px;
+h1.top-title {
+	display: inline-block;
+	position: absolute;
+	bottom: -28px;
+	margin: 0;
+	margin-left: 20px;
+	height : 100%;
+	line-height: 100%;
 }
-
 .content {
 	padding: 0 10px;
 }
-
-.course-title {
-	color: #294860;
-	background-color: #DDD;
+.indent {
 	padding-left: 10px;
 }
-
-.course-description{
-	padding-left :10px;
+.container {
+	position: relative;
 }
-
 .lessons {
 	float: left;
 	display: inline-block;
 	width : 38%;
 	text-align: left;
-}
-.course-summary {
-	padding-left : 10px;
-}
-.lessons-in-course {
-	padding-left: 10px;
-}
-
-.container {
-	position: relative;
-	padding-left: 10px;
 }
 .video {
 	float : right;
@@ -63,15 +105,13 @@ span.top-title {
 	width: 58%;
 	text-align: center;
 }
-
-.video-caption {
+.caption {
 	font-size: smaller;
 	font-weight: bold;
 }
 .clear {
 	clear: both;
 }
-
 ol.lesson{
 	text-align: left;
 }
@@ -87,7 +127,39 @@ a.lesson {
 form {
 	display: inline-block;
 }
-#take-nanodegree {
+label {
+	font-weight: bold;
+	margin-top: 30px;
+}
+
+textarea {
+	resize: none;
+}
+
+input, textarea {
+	margin-bottom: 20px
+}
+
+.add-button {
+  background-image: linear-gradient(to bottom,#52b6ee 0,#409cd3 100%);
+  background-repeat: repeat-x;
+  background-color: #1199c3;
+  color: #fff;
+  background-color: #f6a926;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 4px 12px;
+  font-size: 14px;
+  line-height: 1.7;
+  cursor: pointer;
+  border-color: #2a82b6;
+}
+
+.button-primary {
 	background-image: linear-gradient(to bottom,#f59a18 0,#f27d13 100%);
   background-repeat: repeat-x;
   border-color: #c7640b;
@@ -100,7 +172,7 @@ form {
   border: 1px solid transparent;
   white-space: nowrap;
   padding: 4px 12px;
-  font-size: 14px;
+  font-size: 24px;
   line-height: 1.7;
   cursor: pointer;
 }

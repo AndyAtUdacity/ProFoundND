@@ -1,19 +1,17 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="lesson">
+<div>
   <h2>
-    Lesson {{ lesson_number }} : {{ lesson['title' ]}}
+    Important Concepts from Lesson {{ lesson_number }} : {{ lesson['title' ]}}
   </h2>
+  <div class="indent">
   {% for c in lesson['concepts'] %}
-  <div class="concept">
-    <div class="concept-title">
-      {{ c['title'] }}
-    </div>
-    <div class="concept-description">
+    <h4>{{ c['title'] }}</h4>
+    <p>
       {{ c['description'] }}
-    </div>
-  </div>
+    </p>
   {% endfor %}
+  </div>
 </div>
 {% endblock %}
 

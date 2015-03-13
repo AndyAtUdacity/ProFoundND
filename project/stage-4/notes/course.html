@@ -13,7 +13,7 @@
 		<ol class="lesson-in-course">
 			{% for lesson in course['lessons'] %}
 			<li>
-				<a href="/notes/course/{{ course_number }}/lesson/{{ loop.index }}/">{{ lesson['title'] }}</a>: {{ lesson['description'] }}
+				<a href="lesson/{{ loop.index }}/">{{ lesson['title'] }}</a>: {{ lesson['description'] }}
 				<ul class="concepts">
 					{% for concept in lesson['concepts'] %}
 					<li class="concept">

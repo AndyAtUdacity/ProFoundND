@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Submit your Project!</h2>
+<div class="indent">
+	<p>When you've completed the Nanodegree, submit your project here so other students can learn from what you've done.</p>
+	<form action="/student_submissions/add" method="post">
+		<label for="name">Name to Display</label><br>
+		<input type="text" name="name" id="name" required size="40"></input>
+		<br>
+		<label for="link">URL to your Web Page</label><br>
+		<input type="url" name="link" id="link" required size="40"></input>
+		<br>
+		<label for="description">Project Description</label><br>
+		<textarea name="description" id="description" maxlength="400" cols="40" rows="10" required></textarea>
+		<br>
+		<label for="image-url">URL to background image (optional)</label><br>
+		<input type="url" name="image_url" id="image-url" size="40"></input>
+		<br>
+		<input id="share-project" class="button-primary" type="submit" value="Share your Project!">
+	</form>
+</div>
+{% endblock %}

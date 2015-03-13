@@ -1,27 +1,13 @@
 {% extends "base.html" %}
 {% block content %}
-<form action="/student_submissions/add" method="post">
-	<div><textarea name="link" rows="1" cols="80"></textarea></div>
-	<div><textarea name="description" rows="4" cols="80"></textarea></div>
-	<div><input type="submit" value="Add Your Notes"></div>
-</form>
-
-<div class="student-notes">
+<h2>Student Notes</h2>
+<div class="indent">
+	<form action="add"><button class="add-button" href="add">Add Your Notes</button></form>
 	{% for sub in submissions %}
-	<div class="student-note">
-		<div class="student-notes-image">
-		</div>
-		<div class="student-notes-info">
-			<div class="student-info">
-				<span class="student-name">Andy</span>
-				<span class="submission-date">{{ sub.date }}</span>
-			</div>
-			<div class="student-notes-summary">
-				{{ sub.description }}
-			</div>
-		</div>
-		<div class="view-student-notes">
-			<a href="{{ sub.link }}" target="_blank">View Submission</a>
+	<div class="row">
+		<div class="section" style="background-image: url({{ sub.image_url }})">
+			<a class="section-title" href="{{ sub.link }}">{{ sub.name }}'s Submission</a>
+			<p>{{ sub.description }}</p>
 		</div>
 	</div>
 	{% endfor %}

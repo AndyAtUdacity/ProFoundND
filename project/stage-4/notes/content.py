@@ -1,5 +1,5 @@
 COURSES = [
-{	"title"    : "Webpages, Documents, and Structure",
+{"title"    : "Webpages, Documents, and Structure",
 	"description" : ("This was my introduction to the world of coding. "
 									 "I wrote some simple HTML and CSS to make static web "
 									 "pages. I was first introduced to the principle of "
@@ -10,7 +10,7 @@ COURSES = [
 	"favorite_video": {
 		"title"   : "Interview with Jacques",
 		"url"     : "https://www.youtube.com/embed/Nj5RCaE_b00",
-		"caption" : "Jacques, A professional front-end web developer explains how he 'boxifies' designs."
+		"caption" : "Jacques, A professional front-end web developer, explains how he 'boxifies' designs."
 	},
 	"lessons" : [
 		{
@@ -239,5 +239,155 @@ COURSES = [
 			]
 		}
 	]
+}
+]
+THINKING = [
+{"title" : "Abstract Thinking",
+	"description" : ("Abstract thinking means finding similarity, or as "
+					 "programmers would say, generality amongst seemingly "
+					 "different things."),
+	"examples" : [
+		{"title" : "title-1",
+		 "description" : "description-1"},
+		{"title" : "title-2",
+		 "description" : "description-2"}
+	]	
+},
+{"title" : "Procedural Thinking",
+	"description" : ("Procedural thinking involves creating perfectly " 
+					 "clear and unambiguous instructions for a computer "
+					 "to follow."),
+	"examples" : [
+		{"title" : "title-1",
+		 "description" : "description-1"},
+		{"title" : "title-2",
+		 "description" : "description-2"}
+	]	
+},
+{"title" : "Systems Thinking",
+	"description" : ("Systems thinking happens when you break a big "
+					 "problem down into smaller pieces. Programmers do "
+					 "this when they create a plan (often on paper) for "
+					 "how a program will work. It involves big-picture "
+					 "thinking and decision-making about a problem and "
+					 "how different pieces of a program can work together "
+					 "to solve it."),
+	"examples" : [
+		{"title" : "title-1",
+		 "description" : "description-1"},
+		{"title" : "title-2",
+		 "description" : "description-2"}
+	]	
+},
+{"title" : "Debugging",
+	"description" : ("Debugging is a systematic process of relentlessly "
+					 "identifying the cause of a computer program that "
+					 "doesn't work."),
+	"examples" : [
+		{"title" : "title-1",
+		 "description" : "description-1"},
+		{"title" : "title-2",
+		 "description" : "description-2"}
+	]	
+},
+{"title" : "Technical Empathy",
+	"description" : ("'Technological empathy' comes in many forms. For "
+					 "example, computer empathy is the ability to "
+					 "understand what a computer is, how it works, and "
+					 "what it's good and bad at doing."),
+	"examples" : [
+		{"title" : "title-1",
+		 "description" : "description-1"},
+		{"title" : "title-2",
+		 "description" : "description-2"}
+	]	
+}
+]
+TOPICS = [
+{"title" : "CSS Positioning and Sizing",
+	"description" : ("I really struggled with getting my HTML to "
+					 "look right. I found these resources helpful."),
+	"resources" : [
+		{
+		"title" : "Learn CSS Layout",
+		"url" : "http://learnlayout.com/position.html",
+		"description" : ("A good walk through of the `position` "
+						 "property, including static, relative, fixed, "
+						 "and absolute positioning.")
+		},
+		{
+		"title" : "A Complete Guide to Flexbox",
+		"url" : "https://css-tricks.com/snippets/css/a-guide-to-flexbox/",
+		"description" : ("Flexbox is a, well, flexible box. It gives you "
+						 "a way to have your HTML elements easily adjust "
+						 "their size based on the size of the page.")	
+		},
+		{
+		"title" : "Intro to HTML and CSS",
+		"url" : "https://www.udacity.com/course/ud304",
+		"description" : ("The first lesson of this Udacity course is already "
+						 "in the Nanodegree, but the rest of the course does "
+						 "a good job of thoroughly explaining how to make web "
+						 "pages look the way you want them to.")	
+		}
+	]
+},
+{"title" : "Python Practice",
+	"description" : ("Getting good at programming/Python requires a lot of practice. "
+					 "These are some of my favorite sources of programming practice "
+					 "problems."),
+	"resources" : [
+		{
+		"title" : "Project Euler",
+		"url" : "https://projecteuler.net/",
+		"description" : ("This site provides a lot of highly mathematical "
+						 "problems which can be solved with programming. It's a "
+						 "good place for building your 'Procedural Thinking'.")
+		},
+		{
+		"title" : "Coding Bat",
+		"url" : "http://codingbat.com/python",
+		"description" : ("Though the problems on this site all assume some "
+						 "ability with Python functions, there is a good selection " 
+						 "of fairly easy problems (if you know how to use functions).")	
+		},
+		{
+		"title" : "More Resources from python.org",
+		"url" : "https://wiki.python.org/moin/ProblemSets",
+		"description" : ("The organization that manages the Python language also "
+						 "maintains a list of practice resources as well. Some are "
+						 "better than others.")	
+		}
+	]
+}
+]
+SECTIONS = [
+{"title"     : "Andy's Course Notes",
+ "image_url" : "http://i.imgur.com/fAdI3P8.jpg",
+ "href"      : "nanodegree_notes/",
+ "short_title":"Andy's Notes",
+ "id"        : "notes" 
+},
+{"title"     : "Student Submissions",
+ #"image_url" : "http://i.imgur.com/mFao9m9.jpg",
+ "image_url" : "http://i.imgur.com/KsPcuW0.jpg",
+ "href"      : "student_submissions/",
+ "short_title":"Student Notes",
+ "id"        : "submissions"
+},
+{"title"     : "Additional Resources",
+ #"image_url" : "http://i.imgur.com/Lm0OtXb.jpg",
+ "image_url" : "http://i.imgur.com/Il4i39I.jpg",
+ "href"      : "additional_resources/",
+ "short_title":"Resources",
+ "id"        : "resources"
+},
+{"title"     : "Thinking Like a Programmer",
+ #"image_url" : "http://i.imgur.com/df5TYha.jpg",
+ #"image_url" : "http://i.imgur.com/EvoQVc4.jpg",
+ "image_url" : "http://i.imgur.com/WTq8MFI.jpg",
+ "href"      : "thinking_like_a_programmer/",
+ "short_title":"Thinking",
+ "id"        : "thinking"
 }
 ]

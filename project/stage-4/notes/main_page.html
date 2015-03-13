@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+
+{% for s in sections %}
+<div class="row centered">
+	<div class="section" style="background-image: url({{ s.image_url }})">
+		<a class="section-title" href="{{ s.href }}">{{ s.title }}</a>
+	</div>
+</div>
+{% endfor %}
+
+{% endblock %}
