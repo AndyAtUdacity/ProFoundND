@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+{% for way in ways_of_thinking %}
+<div>
+	<h2>{{ way.title }}</h2>
+	<p>{{ way.description }}</p>
+	{% if way.examples %}
+	<div>
+		<h3>Examples of {{ way.title }}</h3>
+		<ul>
+		{% for example in way.examples %}
+			<li>
+				<h4>{{ example.title }}</h4>
+				<p>{{ example.description }}</p>
+			</li>
+		{% endfor %}
+		</ul>
+	</div>
+	{% endif %}
+</div>
+{% endfor %}
+{% endblock %}

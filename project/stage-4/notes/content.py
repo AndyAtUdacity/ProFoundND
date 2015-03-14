@@ -251,10 +251,10 @@ THINKING = [
 		 "description" : "description-1"},
 		{"title" : "title-2",
 		 "description" : "description-2"}
-	]	
+	]
 },
 {"title" : "Procedural Thinking",
-	"description" : ("Procedural thinking involves creating perfectly " 
+	"description" : ("Procedural thinking involves creating perfectly "
 					 "clear and unambiguous instructions for a computer "
 					 "to follow."),
 	"examples" : [
@@ -262,7 +262,7 @@ THINKING = [
 		 "description" : "description-1"},
 		{"title" : "title-2",
 		 "description" : "description-2"}
-	]	
+	]
 },
 {"title" : "Systems Thinking",
 	"description" : ("Systems thinking happens when you break a big "
@@ -277,7 +277,7 @@ THINKING = [
 		 "description" : "description-1"},
 		{"title" : "title-2",
 		 "description" : "description-2"}
-	]	
+	]
 },
 {"title" : "Debugging",
 	"description" : ("Debugging is a systematic process of relentlessly "
@@ -288,7 +288,7 @@ THINKING = [
 		 "description" : "description-1"},
 		{"title" : "title-2",
 		 "description" : "description-2"}
-	]	
+	]
 },
 {"title" : "Technical Empathy",
 	"description" : ("'Technological empathy' comes in many forms. For "
@@ -300,7 +300,7 @@ THINKING = [
 		 "description" : "description-1"},
 		{"title" : "title-2",
 		 "description" : "description-2"}
-	]	
+	]
 }
 ]
 TOPICS = [
@@ -320,7 +320,7 @@ TOPICS = [
 		"url" : "https://css-tricks.com/snippets/css/a-guide-to-flexbox/",
 		"description" : ("Flexbox is a, well, flexible box. It gives you "
 						 "a way to have your HTML elements easily adjust "
-						 "their size based on the size of the page.")	
+						 "their size based on the size of the page.")
 		},
 		{
 		"title" : "Intro to HTML and CSS",
@@ -328,7 +328,7 @@ TOPICS = [
 		"description" : ("The first lesson of this Udacity course is already "
 						 "in the Nanodegree, but the rest of the course does "
 						 "a good job of thoroughly explaining how to make web "
-						 "pages look the way you want them to.")	
+						 "pages look the way you want them to.")
 		}
 	]
 },
@@ -348,44 +348,40 @@ TOPICS = [
 		"title" : "Coding Bat",
 		"url" : "http://codingbat.com/python",
 		"description" : ("Though the problems on this site all assume some "
-						 "ability with Python functions, there is a good selection " 
-						 "of fairly easy problems (if you know how to use functions).")	
+						 "ability with Python functions, there is a good selection "
+						 "of fairly easy problems (if you know how to use functions).")
 		},
 		{
 		"title" : "More Resources from python.org",
 		"url" : "https://wiki.python.org/moin/ProblemSets",
 		"description" : ("The organization that manages the Python language also "
 						 "maintains a list of practice resources as well. Some are "
-						 "better than others.")	
+						 "better than others.")
 		}
 	]
 }
 ]
 SECTIONS = [
 {"title"     : "Andy's Course Notes",
- "image_url" : "http://i.imgur.com/fAdI3P8.jpg",
+ "image_url" : "/images/computer_notes.jpg",
  "href"      : "nanodegree_notes/",
  "short_title":"Andy's Notes",
- "id"        : "notes" 
+ "id"        : "notes"
 },
 {"title"     : "Student Submissions",
- #"image_url" : "http://i.imgur.com/mFao9m9.jpg",
- "image_url" : "http://i.imgur.com/KsPcuW0.jpg",
+ "image_url" : "/images/colored_papers.jpg",
  "href"      : "student_submissions/",
  "short_title":"Student Notes",
  "id"        : "submissions"
 },
 {"title"     : "Additional Resources",
- #"image_url" : "http://i.imgur.com/Lm0OtXb.jpg",
- "image_url" : "http://i.imgur.com/Il4i39I.jpg",
+ "image_url" : "/images/tools.jpg",
  "href"      : "additional_resources/",
  "short_title":"Resources",
  "id"        : "resources"
 },
 {"title"     : "Thinking Like a Programmer",
- #"image_url" : "http://i.imgur.com/df5TYha.jpg",
- #"image_url" : "http://i.imgur.com/EvoQVc4.jpg",
- "image_url" : "http://i.imgur.com/WTq8MFI.jpg",
+ "image_url" : "/images/blueprint.jpg",
  "href"      : "thinking_like_a_programmer/",
  "short_title":"Thinking",
  "id"        : "thinking"

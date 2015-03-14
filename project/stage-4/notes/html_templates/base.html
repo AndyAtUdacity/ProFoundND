@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+{% autoescape true %}
+<html>
+	<head>
+		<title>
+			Andy's IPND Notes
+		</title>
+		<style>
+			#{{ page_name }}-link {
+				color: rgba(255,255,255,1.0);
+			}
+		</style>
+		<link rel="stylesheet" href="/stylesheets/style.css">
+	</head>
+	<body>
+		<div class="top-nav">
+			<div class="row">
+				<!-- <img src="http://i.imgur.com/fdGeWES.png"> -->
+				<img src="/images/andy.png">
+				<h1 class="top-title" href="/">
+					Intro Programming Nanodegree Notes
+				</h1>
+			</div>
+			<div class="row">
+				<a class="top-link" id="home-link" href="/">
+					Home
+				</a>
+				<ul class="top-links">
+
+					{% for s in sections %}
+					<li class="top-link">
+						<a class="top-link" href="/{{ s.href }}" id="{{ s.id }}-link">
+							{{ s.short_title }}
+						</a>
+					</li>
+					{% endfor %}
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+		<div class="content">
+			{% block content %}
+			{% endblock %}
+		</div>
+		<div class="footer">
+			<h1>Want to learn to code?</h1>
+			<form action="https://www.udacity.com/course/nd000">
+    		<input class="button-primary" type="submit" value="Take the Nanodegree!">
+			</form>
+		</div>
+	</body>
+</html>
+{% endautoescape %}

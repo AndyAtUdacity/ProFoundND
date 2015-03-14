@@ -10,6 +10,19 @@ indexes:
 # automatically uploaded to the admin console when you next deploy
 # your application using appcfg.py.
 
+- kind: CodeExample
+  ancestor: yes
+  properties:
+  - name: language
+  - name: votes
+    direction: desc
+
+- kind: Submission
+  ancestor: yes
+  properties:
+  - name: date
+    direction: desc
+
 - kind: Submission
   ancestor: yes
   properties:
